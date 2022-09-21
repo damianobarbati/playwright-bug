@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "extends": ["eslint-config-xs", "next/core-web-vitals"],
+  "rules": {
+    "max-lines-per-function": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "": "never",
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  }
+}
