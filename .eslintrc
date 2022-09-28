@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["eslint-config-xs", "next/core-web-vitals"],
+  "extends": ["eslint-config-xs"],
   "rules": {
     "max-lines-per-function": "off",
     "import/extensions": [

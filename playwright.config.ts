@@ -5,16 +5,8 @@ import { devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   timeout: 30 * 1000, // timeout per test
   testDir: './e2e', // test directory
-  retries: 2, // if a test fails, retry it additional 2 times
+  retries: 0, // if a test fails, retry it additional 2 times
   outputDir: 'test-results/', // artifacts folder where screenshots, videos, and traces are stored.
-
-  // ref: https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
-  webServer: {
-    command: 'yarn dev',
-    url: `http://localhost`,
-    timeout: 30 * 1000,
-    reuseExistingServer: !!process.env.CI,
-  },
 
   use: {
     baseURL: `http://localhost`,
