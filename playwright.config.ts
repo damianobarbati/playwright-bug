@@ -9,7 +9,6 @@ const config: PlaywrightTestConfig = {
   outputDir: 'test-results/', // artifacts folder where screenshots, videos, and traces are stored.
 
   use: {
-    baseURL: `http://localhost`,
     headless: true,
 
     // ref: https://playwright.dev/docs/trace-viewer
