@@ -10,6 +10,7 @@ const config: PlaywrightTestConfig = {
 
   use: {
     headless: true,
+    channel: 'chrome',
 
     // ref: https://playwright.dev/docs/trace-viewer
     trace: 'retry-with-trace',
@@ -22,17 +23,15 @@ const config: PlaywrightTestConfig = {
 
   projects: [
     {
-      name: 'Desktop Chrome',
+      name: 'Chrome (Desktop)',
       use: devices['Desktop Chrome'],
     },
+    /*
     {
-      name: 'Mobile Chrome',
-      use: devices['Pixel 5'],
-    },
-    {
-      name: 'Mobile Safari',
+      name: 'Safari (iOS)',
       use: devices['iPhone 12'],
     },
+    */
   ],
 };
 
